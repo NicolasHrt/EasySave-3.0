@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projet.NETG4</name>
+    </assembly>
+    <members>
+        <member name="T:EventListner.IEventListner">
+            <summary>
+            Class use by the event manager, useful for inheritance
+            </summary>
+        </member>
+        <member name="M:EventListner.IEventListner.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Methode Update call by the notify method from the event manager
+            </summary>
+            <param name="type"></param>
+            <param name="listUpdate"></param>
+        </member>
+        <member name="T:EventManager.EventManager_M">
+            <summary>
+            The event manager is useful to send real time updates of the saveworks
+            </summary>
+        </member>
+        <member name="F:EventManager.EventManager_M.observers">
+            <summary>
+            Create the list who will contain the observer's classes
+            </summary>
+        </member>
+        <member name="M:EventManager.EventManager_M.Register(EventListner.IEventListner)">
+            <summary>
+            Methode by wich the objects are added to the event listner list
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:EventManager.EventManager_M.Unregister(EventListner.IEventListner)">
+            <summary>
+            Methode by wich the objects are remove to the event listner list
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:EventManager.EventManager_M.Notify(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            method which can be used to activate the update method for objects in the list of observers
+            </summary>
+            <param name="infoUpdate"></param>
+            <param name="listUpdate"></param>
+        </member>
+        <member name="T:log_models.Log_daily">
+            <summary>
+            Definition of the log daily class
+            </summary>
+        </member>
+        <member name="M:log_models.Log_daily.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method update called from the event manager
+            </summary>
+            <param name="type"></param>
+            <param name="listUpdate_daily"></param>
+        </member>
+        <member name="T:log_models.Log_state">
+            <summary>
+            Definition of the log state class
+            </summary>
+        </member>
+        <member name="M:log_models.Log_state.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method update called from the event manager
+            </summary>
+            <param name="type"></param>
+            <param name="listUpdate_state"></param>
+        </member>
+        <member name="T:SaveModel.SaveFactory_M">
+            <summary>
+            Factory to create differente types of save depend of the user input
+            </summary>
+        </member>
+        <member name="M:SaveModel.SaveFactory_M.makeSave(System.String)">
+            <summary>
+            Method to instantiate an objet depend of the save type
+            </summary>
+            <param name="newSaveType">Save type of the Backup Job</param>
+            <returns>instance of a save object</returns>
+        </member>
+        <member name="T:SaveModel.Save_M">
+            <summary> 
+            Base class for save
+            </summary> 
+        </member>
+        <member name="M:SaveModel.Save_M.RunSave(System.String,System.String,System.String)">
+            <summary>
+            Run a save and return some information data relative to the save
+            </summary>
+            <param name="sourcePath">Source directory</param>
+            <param name="targetPath">Target directory</param>
+            <param name="name">Name of the Backup Job</param>
+            <returns>saveListReturn</returns>
+        </member>
+        <member name="T:SaveModel.SaveComplete_VM">
+            <summary>
+            Child class of the save for a complete save
+            </summary>
+        </member>
+        <member name="M:SaveModel.SaveComplete_VM.RunSave(System.String,System.String,System.String)">
+            <summary>
+            Run a complete save and return some information data relative to the complete save
+            </summary>
+            <param name="sourcePath">Source directory</param>
+            <param name="targetPath">Target directory</param>
+            <param name="name">Name of the Backup Job</param>
+            <returns>All information of the save store in a Dictionary</returns>
+        </member>
+        <member name="T:SaveModel.SaveDiff_VM">
+            <summary>
+            Child class of the save for a differential save
+            </summary>
+        </member>
+        <member name="M:SaveModel.SaveDiff_VM.RunSave(System.String,System.String,System.String)">
+            <summary>
+            Run a differential save and return some information data relative to the differential save
+            </summary>
+            <param name="sourcePath">Source directory</param>
+            <param name="targetPath">Target directory</param>
+            <param name="name">Name of the Backup Job</param>
+            <returns>All information of the save store in a Dictionary</returns>
+        </member>
+        <member name="T:SaveWork.SaveWork_VM">
+            <summary>
+            Class with all method for the CRUD of the Backup Job and verification of the user input
+            </summary>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.CreateSaveWork(System.String,System.String,System.String,System.String)">
+            <summary>
+            Method to create a Backup Job
+            </summary>
+            <param name="Name">Name of the new Backup Job</param>
+            <param name="SourceRepo">Source repertory of the new Backup Job</param>
+            <param name="TargetRepo">Target repertory of the new Backup Job</param>
+            <param name="SaveType">Type of the save of the new Backup Job</param>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.RunSaveWork(System.String)">
+            <summary>
+            Method to run one or more SaveWorks
+            </summary>
+            <param name="name">Name of the Backup Job</param>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.DeleteSaveWorks(System.String)">
+            <summary>
+            Method to delete a Backup Job
+            </summary>
+            <param name="Name">Name of the Backup Job to delete</param>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.ModifySaveWork(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method to modify a Backup Job
+            </summary>
+            <param name="Name">Name of Backup Job to modify</param>
+            <param name="parameters">Dictionary that contain all parameter to modify</param>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.DisplaySaveWorks">
+            <summary>
+            Display all Backup Job
+            </summary>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.VerifSaveType(System.String)">
+            <summary>
+            Verify the SaveType with user input
+            </summary>
+            <param name="inputSavetype">backup type number</param>
+            <returns>The SaveType that the user choose</returns>
+        </member>
+        <member name="M:SaveWork.SaveWork_VM.VerifValidSaveWork(System.String,System.String,System.String)">
+            <summary>
+            Verify the Validity of the user input
+            </summary>
+            <param name="Name">Name of the Backup Job</param>
+            <param name="SourceRepo">Source Repository of the Backup Job</param>
+            <param name="TargetRepo">Target Repository of the Backup Job</param>
+            <returns>A bool that confirm the validity of the user input</returns>
+        </member>
+        <member name="T:SaveWork.Menu">
+            <summary>
+            Class for display information on the console
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.#ctor">
+            <summary>
+            Constructor of the Menu method to instansiate a SaveWork_VM object
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayMenu">
+            <summary>
+            Main method for display all the action that the user can do
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayCreateWork">
+            <summary>
+            The display method for the backup Job creation 
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayRunWork">
+            <summary>
+            The display method to start one or more backups
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayDeleteWork">
+            <summary>
+            The display method to delete a Job backup
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayModifyWork">
+            <summary>
+            The display method to modify a Job backup
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplaySaveWorks">
+            <summary>
+            The method to display a Job backup
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayChangeCurrentLanguage">
+            <summary>
+            The method to display available languages and change the language
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.DisplayStartMenu">
+            <summary>
+            The method to display the menu and load the current language
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.ReturnToMenu">
+            <summary>
+            The method to display the menu
+            </summary>
+        </member>
+        <member name="M:SaveWork.Menu.Main(System.String[])">
+            <summary>
+            Main method of the program 
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>

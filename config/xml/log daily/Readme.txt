@@ -1,0 +1,1 @@
+Ce README est présent pour que le dossier /log_daily ne se supprime pas dans Azure Devops si aucun fichier log daily n'est présent

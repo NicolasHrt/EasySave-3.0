@@ -1,0 +1,106 @@
+{
+	//Buttons ------------------------------------------------------------------------------------------
+	"create_button": "Créer",
+
+	"modify_button": "Modifier",
+
+	"delete_button": "Supprimer",
+
+	"run_button": "Lancer",
+
+	"parameters_button": "Paramètres",
+
+	"cancel_button": "Annuler",
+
+	"save_button": "Sauvegarder",
+
+	"add_button": "Ajouter",
+
+	"apply_button": "Appliquer",
+
+
+	//Labels ------------------------------------------------------------------------------------------
+
+	"save_list_label": "Liste des travaux de sauvegarde :",
+
+	"save_wait_label": "Sauvegardes en attente :",
+
+	"job_name_label": "Nom du travail",
+
+	"source_repo_label": "Chemin Source",
+
+	"target_repo_label": "Chemin de Destination",
+
+	"save_type_label": "Type de sauvegarde",
+
+	"language_label": "Langue :",
+
+	"log_daily_format_label": "Logs journaliers :",
+
+	"crypted_ext_label": "Extensions cryptées :",
+
+	"prioritary_ext_label": "Extensions prioritaire :",
+
+	"blocked_software_label": "Logiciels bloqués :",
+
+	"file_size_max_label": "Taile de fichier max :",
+
+	"save_running": "Liste des travaux de sauvegarde en cours :",
+
+	"one_save": "Une sauvegarde",
+
+	"all_save": "Toute les sauvegardes",
+
+	"running": "en cours...",
+
+
+	//Parameters ------------------------------------------------------------------------------------------
+
+	"save_type_full": "Complète",
+
+	"save_type_diff": "Différentielle",
+
+	// Titles ------------------------------------------------------------------------------------------
+
+	"parameters_title": "Paramètres :",
+
+	"new_backupjob": "Nouveau travail de sauvegarde :",
+
+	// Errors ------------------------------------------------------------------------------------------
+	"error_softwareRunning": "Un logiciel que vous avez indiqué est en cours d'execution ! Veuillez le fermer pour reprendre la sauvegarde.'",
+
+	"error_job_name": "Vous n'avez pas rentré de nom pour le travail !",
+
+	"error_repo": "Le chemin spécifié n'existe pas !",
+
+	"error_extension": "L'extension spécifiée n'est pas valide",
+
+	"error_software": "Le champ ne peut pas être vide",
+
+	"informations_invalid": "Les informations spécifiées ne sont pas valides",
+
+	// Success ------------------------------------------------------------------------------------------
+
+	"success_create": "Le travail a bien été créé !",
+
+	"success_modify": "Le travail a bien été modifié !",
+
+	//Sauvegarde ------------------------------------------------------------------------------------------
+	"save_done": "travail bien effectué ! ",
+	"files_size": "Taille totale des fichiers : ",
+	"transfer_time": "Temps de transfert (s) : ",
+	"date_save": "Effectuée le : ",
+	"save_stop": "La run a bien été stoppé.",
+
+	// Select ------------------------------------------------------------------------------------------
+
+	"select_error": "Vous n'avez pas sélectionné de travail !",
+
+	"select_error_delete": "Vous n'avez pas sélectionné de travail à supprimer !",
+
+	"select_error_modify": "Vous n'avez pas sélectionné de travail à modifier !",
+
+	"select_error_already_select": "Vous avez déjà sélectionné ce travail !"
+
+
+}

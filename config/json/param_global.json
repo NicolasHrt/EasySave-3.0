@@ -1,0 +1,13 @@
+{
+  "encryptExtensions": {
+  },
+  "prioExtension": {
+  },
+  "software": {},
+  "key": {
+    "key1": "azertyuiop"
+  },
+  "logformat": "json",
+  "currentLanguage": "FR",
+  "fileSizeMax": "1000"
+}

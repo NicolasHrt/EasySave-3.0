@@ -1,0 +1,110 @@
+{
+	//Buttons ------------------------------------------------------------------------------------------
+	"create_button": "Create",
+
+	"modify_button": "Modify",
+
+	"delete_button": "Delete",
+
+	"run_button": "Run",
+
+	"parameters_button": "Parameters",
+
+	"cancel_button": "Cancel",
+
+	"save_button": "Save",
+
+	"add_button": "Add",
+
+	"apply_button": "Apply",
+
+
+	//Labels ------------------------------------------------------------------------------------------
+
+	"save_list_label": "Save jobs list :",
+
+	"save_wait_label": "Saves to run :",
+
+	"job_name_label": "Job name",
+
+	"source_repo_label": "Source path",
+
+	"target_repo_label": "Target Path",
+
+	"save_type_label": "Save type",
+
+	"language_label": "Language :",
+
+	"log_daily_format_label": "Daily logs format: ",
+
+	"crypted_ext_label": "Crypted extensions :",
+
+	"prioritary_ext_label": "Prioritary extensions :",
+
+	"blocked_software_label": "Softwares blocked :",
+
+	"file_size_max_label": "File Size max :",
+
+	"save_running": "List of current backup jobs :",
+
+	"one_save": "One Save",
+
+	"all_save": "All Saves",
+
+	"running": "running...",
+
+
+	//Parameters ------------------------------------------------------------------------------------------
+
+	"save_type_full": "Complete",
+
+	"save_type_diff": "Differential",
+
+	// Titles ------------------------------------------------------------------------------------------
+
+	"parameters_title": "Parameters :",
+
+	"new_backupjob": "New Backup Job :",
+
+	// Errors ------------------------------------------------------------------------------------------
+	"error_softwareRunning": "A program you have specified is running! Please close it to resume the backup.",
+
+	"error_job_name": "There is no name for the job !",
+
+	"error_repo": "The specified path does'nt exist",
+
+	"error_extension": "The specified extension is invalid",
+
+	"error_software": "The field can't be empty",
+
+	"informations_invalid": "The specified informations are invalid",
+
+	// Success ------------------------------------------------------------------------------------------
+
+	"success_create": "Your job has been created !",
+
+	"success_modify": "Your job has been modified !",
+
+	"success_delete": "Your job has been deleted !",
+
+
+	//Save ------------------------------------------------------------------------------------------
+	"save_done": "work well done ! ",
+	"files_size": "Total file size : ",
+	"transfer_time": "Transfer time (s) : ",
+	"date_save": "Completed on : ",
+	"save_stop": "The run has been stopped.",
+
+	//Select ------------------------------------------------------------------------------------------
+
+	"select_error": "You have not select a job",
+
+	"select_error_delete": "You have not select a job to delete",
+
+	"select_error_modify": "You have not select a job to modify",
+
+	"select_error_already_select": "You have already select this job"
+
+
+
+}
